@@ -1,0 +1,473 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: white;
+    width: 100%;
+    border-bottom: 1px solid black;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .dropdown-container {
+    width: 100%;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 13px !important;  
+    border: none;
+    outline: none;
+    color: black;
+    padding: 6px 8px;
+    background-color: inherit;
+    font: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  
+  .dropdown-content {
+    padding-top: 10px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 16.66%;
+    padding: 10px;
+    background-color: white;
+    height: 310px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  
+  .column a {
+    float: none;
+    color: black;
+    padding: 3px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .column a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .dropdown-right {
+    float: right;
+  }
+
+  .column-women {
+    height: 400px;
+  }
+
+  .column-gift {
+    height: 220px;
+  }
+
+  .column-explorer {
+    height: 690px;
+  }
+
+  .searchbar {
+    width: 100%;
+    height: 6vh;
+    border-bottom: 1px solid black;
+  }
+
+  .searchbar input {
+    height: 6vh;
+    width: 100%;
+    border: none;
+    padding-left: 20px;
+  }
+
+  .navbar-logo img {
+    position: absolute;
+    left: 47%;
+    top: 14px;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      height: auto;
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+
+    .dropdown {
+      display: none;
+    }
+
+    .navbar-logo img {
+      left: 32%;
+      top: 14px;
+    }
+}
+
+.rest {
+    width: 100%;
+    height: 300vh;
+}
+
+.le-cagole-basket {
+    width: 100%;
+    height: 105vh;
+}
+
+.le-cagole-basket {
+    background-image: url(Graphics/Large-HOMEPAGE_DESKTOP_WINTER23_SL_CAGOLE_BASKET_2600x1300px_2x1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.le-cagole-basket-nothing {
+    height: 90vh;
+}
+
+.le-cagole-basket-content {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.le-cagole-basket-content h2 {
+    color: white;
+}
+
+.space-between {
+    height: 10px;
+}
+
+.le-cagole-basket-content button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.new-arrivals {
+    width: 100%;
+    height: 105vh;
+}
+
+.new-arrivals {
+    background-image: url(Graphics/Large-HOMEPAGE\ DESKTOP_0003_W23_Look_41_2600x1300px_2x1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.new-arrivals-nothing {
+    height: 90vh;
+}
+
+.new-arrivals-content {
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.new-arrivals-content h2 {
+    color: black;
+}
+
+.new-arrivals-content button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.crush-sling-bags {
+    width: 100%;
+    height: 105vh;
+}
+
+.crush-sling-bags {
+    background-image: url(Graphics/Large-WINTER23_SL_HOMEPAGE\ DESKTOP_2600x1300px_2x1_CRUSH_SLING_FLORAL_1789_OPTION5_V01_Master.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.crush-sling-bags-nothing {
+    height: 90vh;
+}
+
+.crush-sling-bags-content {
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.crush-sling-bags h2 {
+    color: white;
+}
+
+.crush-sling-bags-content button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.new-arrivals-2 {
+    width: 100%;
+    height: 105vh;
+}
+
+.new-arrivals-2 {
+    background-image: url(Graphics/Large-HOMEPAGE\ DESKTOP\ W1-0006_W23_Look_16_2600x1300px.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.new-arrivals-2-nothing {
+    height: 90vh;
+}
+
+.new-arrivals-2-content {
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.new-arrivals-2-content h2 {
+    color: black;
+}
+
+.new-arrivals-2-content button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.sunglasses {
+    width: 100%;
+    height: 105vh;
+}
+
+.sunglasses {
+    background-image: url(Graphics/Large-Home-_0000_230317_29MonacoCat_1136-5_FINAL_EXTENDED\ \(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sunglasses-nothing {
+    height: 90vh;
+}
+
+.sunglasses-content {
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.sunglasses-content h2 {
+    color: black;
+}
+
+.sunglasses-content button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.footer-pt1 {
+    display: flex;
+}
+
+.footer-link-cards {
+    background-color: #aaaaac;
+    width: 16.66%;
+    border-width: 1px 0px 1px 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 15px;
+    line-height: 25px;
+}
+
+.footer-link-cards div {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.footer-link-cards span {
+    display: block;
+}
+
+.footer-link-cards-head {
+    font-size: 15px;
+}
+
+.footer-link-cards-links {
+    font-size: 13px;
+    height: 25vh;
+}
+
+.the-2023-balenciaga {
+    width: 100%;
+    height: 7vh;
+    background-color: #aaaaac;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+@media screen and (max-width:450px) {
+    .footer-pt1 {
+        flex-direction: column;
+    }
+
+    .footer-link-cards {
+        width: 100%;
+    }
+
+    .footer-link-cards-links {
+        display: none;
+    }
+
+    .footer-link-cards:hover .footer-link-cards-links {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width:450px) {
+    .nav-links-left {
+        display: none;
+    }
+
+    .nav-links-right {
+        display: none;
+    }
+
+    .nav-right-container-services-login {
+        display: none;
+    }
+
+    .img-for-media {
+        margin-left: 72%;
+    }
+
+    .balenciaga-logo img {
+        margin-top: 15px;
+    }
+
+}
+
+@media screen and (max-width:767px){
+    .le-cagole-basket {
+        background-image: url(Graphics/Mobile/basket.jpg);
+        height: 80vh;
+    }
+    
+    .new-arrivals {
+        background-image: url(Graphics/Mobile/new\ arrivals\ 1.jpg);
+        height: 80vh;
+    }
+
+    .crush-sling-bags {
+        background-image: url(Graphics/Mobile/sling.jpg);
+        height: 80vh;
+    }
+
+    .new-arrivals-2 {
+        background-image: url(Graphics/Mobile/new\ arrivals\ 2.jpg);
+        height: 80vh;
+    }
+
+    .sunglasses {
+        background-image: url(Graphics/Mobile/Glass.jpg);
+        height: 80vh;
+    }
+
+    .le-cagole-basket-nothing {
+        height: 65vh;
+    }
+
+    .new-arrivals-nothing {
+        height: 65vh;
+    }
+
+    .crush-sling-bags-nothing {
+        height: 65vh;
+    }
+
+    .new-arrivals-2-nothing {
+        height: 65vh;
+    }
+
+    .sunglasses-nothing {
+        height: 65vh;
+    }
+}
+
